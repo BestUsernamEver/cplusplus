@@ -3,7 +3,7 @@ using namespace std;
 #include <iostream>
 #include <unistd.h> 
 
-enum Operation
+/* enum Operation
 {
     Addition,
     Subtraction,
@@ -46,29 +46,35 @@ int main()
         }
         sleep(10);
     }
-    /*
-    int input;
-    cin >> input;
-    // Check if addition
-        if (input == 1) {
-            printf("First addend: ");
-            float add1;
-            cin >> add1;
-            printf("\n");
+    */
+int main() {
+    while (true) {
+        // Selection screen
+        printf("Select an operation by typing said number and hitting 'Enter'. Type 'exit' now to stop. \n");
+        printf(" ADD (1) \n SUB (2) \n MUL (3) \n DIV (4) \n");
+        // Input option
+        int input;
+        cin >> input;
+        // Check if addition
+            if (input == 1) {
+                printf("First addend: ");
+                float add1;
+                cin >> add1;
+                printf("\n");
 
-            printf("Second addend: ");
-            float add2;
-            cin >> add2;
-            printf("\n");
+                printf("Second addend: ");
+                float add2;
+                cin >> add2;
+                printf("\n");
 
-            cout << "Sum: " << add1 + add2 << "\n\n";
+                cout << "Sum: " << add1 + add2 << "\n\n";
         }
-    // Check if subtraction
-        if (input == 2) {
-            printf("Minuend: ");
-            float sub1;
-            cin >> sub1;
-            printf("\n");
+        // Check if subtraction
+            if (input == 2) {
+                printf("Minuend: ");
+                float sub1;
+                cin >> sub1;
+                printf("\n");
 
             printf("Subtrahend: ");
             float sub2;
@@ -104,6 +110,8 @@ int main()
             printf("\n");
 
             cout << "Quotient: " << div1 / div2 << "\n\n";
-        } */
+        }
+        sleep(5);
+    }
     return 0;
 }
