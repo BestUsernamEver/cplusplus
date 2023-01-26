@@ -1,21 +1,20 @@
 #include <iostream>
 #include <cstdio>
-#include <string>
 
-float add(int x, int y) {
-    printf("%i + %i = %i", x, y, x+y);
+void add(int x, int y) {
+    printf("%i + %i = %i\n", x, y, x+y);
 }
 
-float subtract(int x, int y) {
-    printf("%i - %i = %i", x, y, x*y);
+void subtract(int x, int y) {
+    printf("%i - %i = %i\n", x, y, x-y);
 }
 
-float multiply(int x, int y) {
-    printf("%i x %i = %i", x, y, x+y);
+void multiply(int x, int y) {
+    printf("%i x %i = %i\n", x, y, x*y);
 }
 
-float divide(int x, int y) {
-    printf("%i / %i = %i", x, y, x+y);
+void divide(int x, int y) {
+    printf("%i / %i = %i\n", x, y, x/y);
 }
 
 
@@ -77,4 +76,5 @@ int main() {
         
         divide(x, y);
     }
+    return 0;
 }
