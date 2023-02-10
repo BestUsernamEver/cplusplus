@@ -3,14 +3,14 @@ using namespace std;
 #include <iostream>
 #include <unistd.h> 
 
-enum Operation
+/* enum Operation
 {
     Addition,
     Subtraction,
     Multiplication,
     Division
 };
-
+*/
 int main()
 {
     while (true)
@@ -26,7 +26,7 @@ int main()
         scanf("%i", &x);
         scanf("%i", &y);
         // stupid
-        switch (input)
+        /*switch (input)
         {
         case 1:
             printf("%i\n", x + y);
@@ -45,8 +45,8 @@ int main()
             break;
         }
         sleep(10);
-    }
-    /*
+    }*/
+    
     int input;
     cin >> input;
     // Check if addition
@@ -104,6 +104,6 @@ int main()
             printf("\n");
 
             cout << "Quotient: " << div1 / div2 << "\n\n";
-        } */
+        }
     return 0;
 }
