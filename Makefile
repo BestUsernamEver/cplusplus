@@ -1,2 +1,2 @@
 build:
-	g++ -o rps rps.cpp
+	g++ -o rps rockpaperscissors/rps.cpp

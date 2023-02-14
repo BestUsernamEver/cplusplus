@@ -1,6 +1,6 @@
-using namespace std;
 #include <cstdio>
 #include <iostream>
+using namespace std;
 
 // First attempted calculator without tutorial/help
 int main() {
@@ -65,6 +65,6 @@ int main() {
             printf("\n");
 
             cout << "Quotient: " << div1 / div2 << "\n\n";
-        } */
+        }
     return 0;
 }
