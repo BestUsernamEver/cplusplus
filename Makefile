@@ -1,2 +1,3 @@
 build:
-	g++ -o rps rockpaperscissors/rps.cpp
+	g++ sandbox.cpp -o run
+	./run
