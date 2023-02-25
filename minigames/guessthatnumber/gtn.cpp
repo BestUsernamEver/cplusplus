@@ -6,7 +6,7 @@ using namespace std;
 int main() {
   int cpuNumber;
   int playerGuess;
-  int guessCount = 0;
+  int guessCount;
 
   srand(time(NULL));
   cpuNumber = rand() % 100 + 1;
@@ -16,6 +16,9 @@ int main() {
     cin >> playerGuess;
     if (playerGuess == cpuNumber) {
       printf("Correct, the number was %i! You guessed %i times!\n", cpuNumber, guessCount);
+      if (guessCount < 3) {
+        printf("You beat Isaiah's highscore of 3!\n");
+      }
     }
     if (playerGuess < cpuNumber) {
       printf("Incorrect, the number is higher.\n");
@@ -23,6 +26,7 @@ int main() {
     if (playerGuess > cpuNumber) {
       printf("Incorrect, the number is lower.\n");
     }
+    guessCount++;
   }
   return 0;
 }
