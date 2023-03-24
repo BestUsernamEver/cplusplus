@@ -1,5 +1,13 @@
 calculator:
-	g++ calculator/calc-v2.cpp -o run
+	g++ tools/calculator/calc-v2.cpp -o run
+	./run
+
+translate:
+	g++ tools/translator/translator.cpp -o run
+	./run
+
+reverse:
+	g++ tools/reverser/reverser.cpp -o run
 	./run
 
 gtn:
@@ -8,10 +16,6 @@ gtn:
 
 rps:
 	g++ minigames/rockpaperscissors/rps.cpp -o run
-	./run
-
-translate:
-	g++ translator/translator.cpp -o run
 	./run
 
 sandbox:
