@@ -10,6 +10,10 @@ reverse:
 	g++ tools/reverser/reverser.cpp -o run
 	./run
 
+battlesim:
+	g++ minigames/battlesimulator/battlesim.cpp -o run
+	./run
+
 gtn:
 	g++ minigames/guessthatnumber/gtn.cpp -o run
 	./run
