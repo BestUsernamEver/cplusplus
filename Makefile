@@ -1,4 +1,4 @@
-calculator:
+calc:
 	g++ tools/calculator/calc-v2.cpp -o run
 	./run
 
@@ -10,8 +10,8 @@ reverse:
 	g++ tools/reverser/reverser.cpp -o run
 	./run
 
-battlesim:
-	g++ minigames/battlesimulator/battlesim.cpp -o run
+sim:
+	g++ minigames/battlesimulator/* -o run
 	./run
 
 gtn:
