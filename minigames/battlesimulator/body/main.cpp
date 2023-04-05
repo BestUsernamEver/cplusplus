@@ -23,6 +23,7 @@ int main() {
     Enemy enemy;
     enemy.random_choice();
     sleep(1);
+    
   }
   return 0;
 }

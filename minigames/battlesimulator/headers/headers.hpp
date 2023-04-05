@@ -6,8 +6,8 @@
 #include <iostream>
 // cin >>
 // cout <<
-#include <string>
-// str String
+#include <string.h>
+// string String
 #include <unistd.h>
 // sleep
 using namespace std;
